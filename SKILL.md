@@ -1,5 +1,5 @@
 ---
-name: yiya-story-sticker-studio
+name: bss-story-sticker-studio
 description: 从一张人物或动物照片、原创角色图制作有专属表情、故事场景和小剧情的精绘动态聊天表情，支持逐帧精修、真实GIF验收和微信投稿素材打包。用于照片转表情包、动物表情、原创IP动态表情、职场情绪动图与微信表情投稿准备。
 ---
 

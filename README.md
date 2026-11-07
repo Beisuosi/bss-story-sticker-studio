@@ -1,10 +1,10 @@
-# YIYA · 微信动态表情工作室
+# BSS · 微信动态表情工作室
 
 **只需一张照片，即可获得一套有文字、有场景、有小剧情的动态表情包与微信投稿素材。**
 
-`yiya-story-sticker-studio` · `v0.1.0-beta.1` · 公开测试版
+`bss-story-sticker-studio` · `v0.1.0-beta.1` · 公开测试版
 
-上传人物照片、动物照片或原创角色图，让支持图像生成与 Python 执行的智能体完成角色设计、文案策划、故事分镜、GIF 合成和检查。默认采用精绘 Q 版，也可以按自己的喜好调整画风、背景、字体和动作。拿到成品后，可以继续精修，再自行投稿。
+上传一张人物照片、动物照片或原创角色图，让支持图像生成与 Python 执行的智能体完成角色设计、文案策划、故事分镜、GIF 合成和检查。默认采用精绘 Q 版，也可以按自己的喜好调整画风、背景、字体和动作。拿到成品后，可以继续精修，再自行投稿。
 
 > 这是供智能体使用的 Skill，需要所在环境具备图像生成能力。仓库不包含生图模型，单独运行脚本不会自动生成图片。
 
@@ -25,20 +25,20 @@
 
 ### 1. 安装 Skill
 
-下载本仓库 ZIP 并解压，将包含 `SKILL.md` 的整个文件夹放入技能目录，文件夹名称设为 `yiya-story-sticker-studio`。
+下载本仓库 ZIP 并解压，将包含 `SKILL.md` 的整个文件夹放入技能目录，文件夹名称设为 `bss-story-sticker-studio`。
 
 默认技能目录示例：
 
 | 系统 | 文件夹位置 |
 | --- | --- |
-| Windows | `%USERPROFILE%\.codex\skills\yiya-story-sticker-studio\` |
-| macOS / Linux | `~/.codex/skills/yiya-story-sticker-studio/` |
+| Windows | `%USERPROFILE%\.codex\skills\bss-story-sticker-studio\` |
+| macOS / Linux | `~/.codex/skills/bss-story-sticker-studio/` |
 
 如果已自定义技能目录，请使用自己的配置。解压下载包时注意避免多套一层目录，正确结构应为：
 
 ```text
 skills/
-└── yiya-story-sticker-studio/
+└── bss-story-sticker-studio/
     ├── SKILL.md
     ├── README.md
     ├── requirements.txt
@@ -46,7 +46,7 @@ skills/
     └── references/
 ```
 
-安装或更新后，新开对话。如已经安装旧名称 `story-sticker-studio`，请用新版替换旧技能，避免同时保留两套造成调用混淆。现在的调用名是 `$yiya-story-sticker-studio`。
+安装或更新后，新开对话。如已经安装之前的旧品牌版本或 `story-sticker-studio`，请用新版替换旧技能，避免同时保留两套造成调用混淆。现在的调用名是 `$bss-story-sticker-studio`。
 
 ### 2. 上传参考图片
 
@@ -56,7 +56,7 @@ skills/
 
 直接复制：
 
-> 使用 $yiya-story-sticker-studio，根据我上传的图片制作一套动态表情包。未指定的内容按默认标准自动策划，完成角色设计、文案、场景、小剧情、GIF制作和检查，交付成品、动态预览及微信投稿配套素材，不要直接发布。
+> 使用 $bss-story-sticker-studio，根据我上传的图片制作一套动态表情包。未指定的内容按默认标准自动策划，完成角色设计、文案、场景、小剧情、GIF制作和检查，交付成品、动态预览及微信投稿配套素材，不要直接发布。
 
 无需自己逐张编写生图提示词。助手负责把普通制作要求转换为具体计划与生成提示词。
 
@@ -95,7 +95,7 @@ skills/
 
 希望更详细地描述，可以使用这个模板，删掉不需要的项目：
 
-> 使用 $yiya-story-sticker-studio，以这张图片为角色参考，制作[数量]张[主题]动态表情。保留[角色辨识特征]，采用[画风与比例]、[配色]，搭配[背景场景]。文字采用[字形与颜色]，包含[指定文案，或由你策划]。每张设计专属表情和连贯小剧情。请[自动完成整套，或先给角色母版]，交付GIF、动态预览、检查报告及[所需配套素材]，不要直接发布。
+> 使用 $bss-story-sticker-studio，以这张图片为角色参考，制作[数量]张[主题]动态表情。保留[角色辨识特征]，采用[画风与比例]、[配色]，搭配[背景场景]。文字采用[字形与颜色]，包含[指定文案，或由你策划]。每张设计专属表情和连贯小剧情。请[自动完成整套，或先给角色母版]，交付GIF、动态预览、检查报告及[所需配套素材]，不要直接发布。
 
 ## 拿到成品后怎么精修
 
@@ -195,4 +195,4 @@ python -m unittest discover -s tests -v
 
 代码与文档采用 [MIT License](LICENSE)。输入照片、用户作品、第三方字体和生成图像的权利不因代码许可证一并授予。请使用自己或有权使用的素材。
 
-这是 YIYA 的独立项目，并非微信或腾讯官方产品。
+这是 BSS 的独立项目，并非微信或腾讯官方产品。
